@@ -60,8 +60,8 @@ desktop-file-validate %{_vpath_builddir}/cz.pvlcek.minirec.desktop
 %{_datadir}/metainfo/cz.pvlcek.minirec.metainfo.xml
 %{_datadir}/swcatalog/xml/minirec.xml
 %license %{_datadir}/licenses/minirec-linux/LICENSE
+%license %{_datadir}/licenses/minirec-linux/REPOSITORY_NOTICE.md
 %doc %{_datadir}/doc/minirec-linux/README.md
-%doc %{_datadir}/doc/minirec-linux/REPOSITORY_NOTICE.md
 %doc %{_datadir}/doc/minirec-linux/android-parity.md
 %doc %{_datadir}/doc/minirec-linux/desktop-integration.md
 

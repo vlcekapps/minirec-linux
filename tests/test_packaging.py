@@ -199,10 +199,14 @@ raise SystemExit(0 if entry is not None else 3)
         catalog_component = catalog.find("component")
         license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
         notice = (ROOT / "REPOSITORY_NOTICE.md").read_text(encoding="utf-8")
+        normalized_notice = " ".join(notice.split())
         self.assertIsNotNone(catalog_component)
         assert catalog_component is not None
         self.assertIn("license: 'GPL-3.0-or-later'", meson)
-        self.assertIn("license_files: 'LICENSE'", meson)
+        self.assertIn(
+            "license_files: ['LICENSE', 'REPOSITORY_NOTICE.md']",
+            meson,
+        )
         self.assertIn('license = "GPL-3.0-or-later"', pyproject)
         self.assertIn(
             'license-files = ["LICENSE", "REPOSITORY_NOTICE.md"]',
@@ -222,12 +226,19 @@ raise SystemExit(0 if entry is not None else 3)
             "FSFAP",
             catalog_component.findtext("metadata_license"),
         )
-        self.assertIn("SPDX-License-Identifier: GPL-3.0-or-later", license_text)
-        self.assertIn("either version 3 of the License", license_text)
-        self.assertIn("any later version", license_text)
         self.assertIn("GNU GENERAL PUBLIC LICENSE", license_text)
         self.assertIn("Version 3, 29 June 2007", license_text)
-        self.assertIn("GPL-3.0-or-later", notice)
+        self.assertIn(
+            "SPDX-License-Identifier: GPL-3.0-or-later",
+            normalized_notice,
+        )
+        self.assertIn("either version 3 of the License", normalized_notice)
+        self.assertIn("any later version", normalized_notice)
+        self.assertIn("GPL-3.0-or-later", normalized_notice)
+        self.assertIn(
+            "%license %{_datadir}/licenses/minirec-linux/REPOSITORY_NOTICE.md",
+            spec,
+        )
         self.assertNotIn("LicenseRef-Proprietary", meson + pyproject + spec)
         self.assertNotIn(".invalid", spec)
 

@@ -102,8 +102,9 @@ před sestavením balíčku.
 ## Licence a zdrojový kód
 
 Copyright © 2026 Pavel Vlček. MiniRec pro Linux je svobodný software vydaný pod
-licencí `GPL-3.0-or-later`; úplné znění je v souboru `LICENSE`. Veřejný kanonický
-zdrojový repozitář je <https://github.com/vlcekapps/minirec-linux>.
+licencí `GPL-3.0-or-later`; licenční grant a úplné znění jsou v souborech
+`REPOSITORY_NOTICE.md` a `LICENSE`. Veřejný kanonický zdrojový repozitář je
+<https://github.com/vlcekapps/minirec-linux>.
 
 Podrobný rozdíl proti Android verzi popisuje
 [`docs/android-parity.md`](docs/android-parity.md).

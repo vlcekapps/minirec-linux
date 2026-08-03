@@ -2,7 +2,7 @@ project(
   'minirec-linux',
   version: '0.1.23',
   license: 'GPL-3.0-or-later',
-  license_files: 'LICENSE',
+  license_files: ['LICENSE', 'REPOSITORY_NOTICE.md'],
   meson_version: '>=1.2.0',
 )
 
@@ -130,11 +130,11 @@ install_data(
 )
 install_data(
   'LICENSE',
+  'REPOSITORY_NOTICE.md',
   install_dir: join_paths(get_option('datadir'), 'licenses', 'minirec-linux'),
 )
 install_data(
   'README.md',
-  'REPOSITORY_NOTICE.md',
   'docs/android-parity.md',
   'docs/desktop-integration.md',
   install_dir: join_paths(get_option('datadir'), 'doc', 'minirec-linux'),
