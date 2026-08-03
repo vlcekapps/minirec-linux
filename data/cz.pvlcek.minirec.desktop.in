@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=MiniRec
+GenericName=Audio Recorder
+GenericName[cs]=Záznamník zvuku
+Comment=Make and manage accessible audio recordings
+Comment[cs]=Pořizování a správa přístupných zvukových nahrávek
+Exec="@PYTHON@" "@MINIREC_LAUNCHER@"
+Icon=cz.pvlcek.minirec
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Recorder;GTK;GNOME;
+Keywords=recording;recorder;microphone;audio;voice;opus;mp3;wav;
+Keywords[cs]=nahrávání;záznamník;mikrofon;zvuk;hlas;opus;mp3;wav;
+StartupNotify=true
+X-GNOME-UsesNotifications=true

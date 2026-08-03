@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minirec-linux"
+version = "0.1.23"
+description = "Accessible GTK 4 audio recorder"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "REPOSITORY_NOTICE.md"]
+authors = [{ name = "Pavel Vlček" }]
+keywords = ["audio", "recording", "GTK4", "accessibility", "Opus", "MP3"]
+dependencies = ["PyGObject>=3.48"]
+
+[project.urls]
+Homepage = "https://github.com/vlcekapps/minirec-linux"
+Repository = "https://github.com/vlcekapps/minirec-linux"
+
+[project.scripts]
+minirec = "minirec.__main__:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["minirec*"]
+
+[tool.setuptools.package-data]
+minirec = ["data/*"]

@@ -1,0 +1,25 @@
+button.primary-action {
+  min-height: 64px;
+  min-width: 160px;
+}
+
+button,
+menubutton,
+dropdown,
+checkbutton,
+scale {
+  min-height: 48px;
+}
+
+.status-text {
+  font-size: 1.15em;
+}
+
+.elapsed-time {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.danger-action {
+  color: @error_color;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>MiniRec microphone</title>
+  <rect width="128" height="128" rx="28" fill="#7a1c1c"/>
+  <path fill="#fff" d="M64 25c-10.5 0-19 8.5-19 19v25a19 19 0 0 0 38 0V44c0-10.5-8.5-19-19-19zm-31 39a6 6 0 0 1 6 6 25 25 0 0 0 50 0 6 6 0 0 1 12 0c0 18.4-13.4 33.7-31 36.5V113h13a6 6 0 0 1 0 12H45a6 6 0 0 1 0-12h13v-6.5C40.4 103.7 27 88.4 27 70a6 6 0 0 1 6-6z"/>
+</svg>

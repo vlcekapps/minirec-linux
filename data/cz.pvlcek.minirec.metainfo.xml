@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>cz.pvlcek.minirec</id>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>MiniRec</name>
+  <summary>Accessible audio recorder</summary>
+  <summary xml:lang="cs">Přístupný záznamník zvuku</summary>
+  <description>
+    <p>MiniRec records, manages, and plays audio with a keyboard- and screen-reader-friendly GTK interface.</p>
+    <p xml:lang="cs">MiniRec nahrává, spravuje a přehrává zvuk v rozhraní GTK přístupném z klávesnice a se čtečkou obrazovky.</p>
+  </description>
+  <launchable type="desktop-id">cz.pvlcek.minirec.desktop</launchable>
+  <developer id="cz.pvlcek">
+    <name>Pavel Vlček</name>
+  </developer>
+  <url type="homepage">https://github.com/vlcekapps/minirec-linux</url>
+  <provides>
+    <binary>minirec</binary>
+  </provides>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Audio</category>
+    <category>Recorder</category>
+  </categories>
+  <supports>
+    <control>keyboard</control>
+  </supports>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.23" date="2026-08-03">
+      <description>
+        <p>Complete Android parity for recording-list metadata by showing the date, duration, size, and explicit audio format.</p>
+      </description>
+    </release>
+    <release version="0.1.22" date="2026-08-03">
+      <description>
+        <p>Keep the GNOME launcher valid while an RPM upgrade replaces MiniRec's command-line launcher.</p>
+      </description>
+    </release>
+    <release version="0.1.21" date="2026-08-03">
+      <description>
+        <p>Initial accessible Linux port with Ogg/Opus, MP3, WAV, recording recovery, and internal playback.</p>
+      </description>
+    </release>
+  </releases>
+</component>

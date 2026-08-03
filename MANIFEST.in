@@ -1,0 +1,7 @@
+include AGENTS.md LICENSE REPOSITORY_NOTICE.md README.md meson.build pyproject.toml run.sh
+recursive-include data *
+recursive-include docs *
+recursive-include minirec/data *
+recursive-include packaging *
+recursive-include tests *.py
+recursive-include tools *.py *.sh
